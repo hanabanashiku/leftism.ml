@@ -1,6 +1,56 @@
 ---
 ---
-html {
-  background-color: black;
-  color: white;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto&display=swap');
+
+$dark-red: rgb(179, 0, 0);
+$abril: 'Abril Fatface', cursive;
+$roboto: 'Roboto', sans-serif;
+
+html, body {
+  height: 100%;
 }
+
+#wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  margin-top: 50px;
+  max-width: 250px;
+  min-width: 250px;
+  height: 100vh;
+  padding: 20px;
+  background: #222;
+  transition: all 0.3s;
+}
+
+.navbar {
+  background-color: $dark-red !important;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: $abril;
+  font-weight: bold;
+  color: yellow !important;
+}
+
+main {
+  width: 100%;
+  min-height: 92vh;
+  padding: 80px 20px 0px 20px;
+  transition: all 0.3s;
+}
+
+footer {
+  padding: 1em 0 0.2em 0;
+  line-height: 0.5em;
+  background-color: rgb(60, 61, 65);
+  color: white;
+  display: block;
+}
+
